@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Weather App </title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="output.css"> 
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-blue-100">
+    <h1 class="bg-blue-600 text-white text-center text-lg py-4">Weather Forecast</h1>
+    <div class="container flex gap-8 p-6">
+        <div class="weather-input w-96">
+            <h3 class="text-lg">Enter a City Name</h3>
+            <input class="city-input h-12 w-full px-4 mt-2 border border-gray-300 rounded" type="text" placeholder="E.g., New York, London, Tokyo">
+            <button class="search-btn w-full py-2 mt-2 bg-blue-600 text-white rounded transition duration-200 hover:bg-blue-700">Search</button>
+            <div class="separator flex items-center justify-center mt-6">
+                <span class="text-gray-700 px-4 bg-blue-100">or</span>
+            </div>
+            <button class="location-btn w-full py-2 mt-6 bg-gray-600 text-white rounded transition duration-200 hover:bg-gray-700">Use Current Location</button>
+        </div>
+        <div class="weather-data w-full">
+            <div class="current-weather bg-blue-600 text-white rounded p-6 flex justify-between">
+                <div class="details">
+                    <h2 class="text-xl font-semibold">_______ ( ______ )</h2>
+                    <h6 class="mt-3">Temperature: __°C</h6>
+                    <h6>Wind: __ M/S</h6>
+                    <h6>Humidity: __%</h6>
+                </div>
+                <div class="icon text-center">
+                    <img src="" alt="weather-icon" class="max-w-full mx-auto mt-4">
+                    <h6 class="mt-2"></h6>
+                </div>
+            </div>
+            <div class="days-forecast mt-6">
+                <h2 class="text-lg font-semibold">5-Day Forecast</h2>
+                <ul class="weather-cards flex flex-wrap gap-6">
+                    <li class="card bg-gray-600 text-white rounded p-4">
+                        <h3 class="text-lg font-semibold">( ______ )</h3>
+                        <h6 class="mt-2">Temp: __C</h6>
+                        <h6>Wind: __ M/S</h6>
+                        <h6>Humidity: __%</h6>
+                    </li>
+                    <!-- Repeat this for other cards -->
+                    <li class="card bg-gray-600 text-white rounded p-4">
+                        <h3>( ______ )</h3>
+                        <h6>Temp: __C</h6>
+                        <h6>Wind: __ M/S</h6>
+                        <h6>Humidity: __%</h6>
+                      </li>
+                      <li class="card bg-gray-600 text-white rounded p-4">
+                        <h3>( ______ )</h3>
+                        <h6>Temp: __C</h6>
+                        <h6>Wind: __ M/S</h6>
+                        <h6>Humidity: __%</h6>
+                      </li>
+                      <li class="card bg-gray-600 text-white rounded p-4">
+                        <h3>( ______ )</h3>
+                        <h6>Temp: __C</h6>
+                        <h6>Wind: __ M/S</h6>
+                        <h6>Humidity: __%</h6>
+                      </li>
+                      <li class="card bg-gray-600 text-white rounded p-4">
+                        <h3>( ______ )</h3>
+                        <h6>Temp: __C</h6>
+                        <h6>Wind: __ M/S</h6>
+                        <h6>Humidity: __%</h6>
+                      </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <body class="bg-gray-100 pb-12"> <!-- Added pb-12 for padding bottom -->
+
+     
+    
+        <footer class="bg-blue-500 py-6 mt-8"> <!-- Added mt-8 for margin top -->
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="md:text-left text-center">
+                        <h4 class="text-white text-lg font-semibold">About WeatherApp</h4>
+                        <p class="text-white text-sm mt-2">WeatherApp is your go-to destination for accurate weather forecasts around the globe. Our mission is to provide you with up-to-date weather information to help you plan your day effectively.</p>
+                    </div>
+                    <div class="md:text-right text-center">
+                        <h4 class="text-white text-lg font-semibold">Contact Us</h4>
+                        <p class="text-white text-sm mt-2">Have questions or feedback? Feel free to reach out to us:</p>
+                        <p class="text-white text-sm mt-1">Email: info@weatherapp.com</p>
+                        <p class="text-white text-sm mt-1">Phone: +1 (123) 456-7890</p>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <p class="text-white text-center text-sm">© 2024 WeatherApp. All rights reserved.</p>
+                    <p class="text-white text-center text-sm mt-1">Powered by Weather API</p>
+                </div>
+            </div>
+        </footer>
+    
+    </body>
+    
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
